@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://emmy:emmy@cluster0.hqsmf.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://emmy:<password>@cluster0.hqsmf.mongodb.net/todolistDB");
 
 const items = ["Buy Food", "Cook Food", "Eat Food"];
 const workItems = [];
